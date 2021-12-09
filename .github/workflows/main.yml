@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-#       - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-#       - name: List all ORIGINAL files
-#         run: ls
+      - name: List all ORIGINAL files
+        run: ls
 
 #       - name: Install Python
 #         uses: actions/setup-python@v2
@@ -29,4 +29,4 @@ jobs:
 #         run: if [ -f requirements.txt ]; then pip install -r requirements.txt; fi; python main.py
 
       - name: List all NEW files
-        run: ls
+        run: hostname
